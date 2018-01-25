@@ -1,0 +1,15 @@
+server:
+  port: 8765
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-consumer
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+
+#加上超时时间，如果提供者出问题，这个超时时间就会起作用
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
