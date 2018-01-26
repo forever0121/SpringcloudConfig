@@ -1,4 +1,4 @@
-foo: foo version 8
+foo: foo version 9
 server:
   port: 8763
 ribbon:
