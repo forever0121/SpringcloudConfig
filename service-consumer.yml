@@ -1,4 +1,4 @@
-foo: foo version 13
+foo: foo version 14
 server:
   port: 8763
 #ribbon:
