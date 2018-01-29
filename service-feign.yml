@@ -3,3 +3,10 @@ server:
 feign:
    hystrix:
      enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
